@@ -1,0 +1,20 @@
+<html lang="en">
+<%- include ('./partials/header.ejs') %>
+<body>
+
+    <h2>Logged In!</h2>
+    Hello, <%= user.username %>
+
+    <div class="amount">
+        <div id="counter" style="font-size: 24px;">0</div>
+        <button id="increment">Increment</button>
+        <button id="decrement">Decrement</button>
+    </div>
+
+    <form action="logout">
+        <input type="submit" value="Logout" placeholder="Log out">
+    </form>
+
+    <script src="style.js"></script>
+</body>
+</html>
